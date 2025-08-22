@@ -20,7 +20,7 @@ const serverStart = async () => {
    try {
     connectDB()
     if (ENV.NODE_ENV !== "production") {
-        app.listen(PORT, () => {
+        app.listen(PORT, "0.0.0.0",() => {
         console.log("Server started on port:", PORT);
         });   
     }

@@ -31,3 +31,4 @@ const serverStart = async () => {
     
 }
 serverStart();
+export default app;
